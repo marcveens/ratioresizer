@@ -1,0 +1,38 @@
+/// <reference path="variables.scss" />
+
+/* Media queries */
+@mixin respond-to($media) {
+  @if $media == xs {
+	@media only screen and (min-width: $screen-xs) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: $screen-sm) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $screen-md) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $screen-lg) { @content; }
+  }
+  @else if $media == xl {
+    @media only screen and (min-width: $screen-xl) { @content; }
+  }
+}
+
+@mixin respond-to-only($media) {
+	@if $media == xs {
+		@media only screen and (max-width: $screen-xs-max) { @content; }
+	}
+	@if $media == sm {
+		@media only screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) { @content; }
+	}
+	@if $media == md {
+		@media only screen and (min-width: $screen-md) and (max-width: $screen-md-max) { @content; }
+	}
+	@if $media == lg {
+		@media only screen and (min-width: $screen-lg) and (max-width: $screen-lg-max) { @content; }
+	}
+	@if $media == xl {
+		@media only screen and (min-width: $screen-xl) { @content; }
+	}
+}

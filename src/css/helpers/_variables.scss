@@ -1,0 +1,19 @@
+/* Colors */
+$primary-color: #000;
+
+/* Sizes */
+$screen-xs: 0px; 
+$screen-sm: 544px; 
+$screen-md: 768px; 
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-xs-max: $screen-sm - 1;
+$screen-sm-max: $screen-md - 1;
+$screen-md-max: $screen-lg - 1;
+$screen-lg-max: $screen-xl - 1;
+
+/* Fonts */
+$font-family-sans-serif: 'Arial';
+$fonts-family-serif: 'Times New Roman, Times, serif';
+$fontello: 'Fontello';
